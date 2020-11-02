@@ -11,57 +11,45 @@ For support and feature requests join our discord server: https://discord.gg/RFs
 
 ## Commands
 
-The default prefix for JamesBot is `!!` you can customise it as desired. Later you will be able to @mention the bot to launch command instead of using his prefix.
+The default prefix for JamesBot is `!!` you can customise it as desired. You are also able to @mention the bot to launch command instead of using his prefix.
 
-This is a list of commands you can use. You can get more info about a specific command by using `!!help <command>` (e.g. `!!help leaderboard`)
+This is a list of commands you can use. You can get more info about a specific command by using `!!help <command>` or `@JamesBot#5537 help <command>` (e.g. `!!help leaderboard`)
 
-Arguments are listed after the command. Bracket [] indicate an optional argument. (e.g. `[reason]` means the reason is optional)
+Arguments are listed after the command. Chevron <> indicate an optional argument, Bracket [] indicate an required argument (e.g. `<reason>` means the reason is optional, however `[user]` means the user is required)
 
-### Configuration
-
-**This section is specially to understand each config settings**
-
-
-* `!!config -sysNotif` Make you able to enable/disable bot notification
-* `!!config -modo @role` Make you able to set Moderator role *(Only 1 role per server right now)*
-* `!!config -admin @role` Make you able to set Administrator role *(Only 1 role per server right now)*
+👥 Means that the command can only be user in a guild
 
 ### Moderation
 
-* `!!clear amount` Clear an amount of messages
-* `!!mku (-m) message|message_ID ` Put your message into an embed *(Use -m if you use a message ID instead of a string)*
-* `!!prefix (-edit/-del) prefix` Set a new prefix for the bot on your server *(-del reset to default prefix)*
-* `!!poll -amount_of_reaction text` Make a new poll with a custom amount of reaction
-* `!!report -type @user reason` Report a user on the server. **This command can take several properties check them below**
-```.env
-# Command usable by all users
-!!report -type @user reason
+* 👥 `!!ban [user] <reason>` Ban a member from the guild.
+* 👥 `!!unban [user]` Unban a member from the guild
+* 👥 `!! prefix [prefix/"default"/"none"]` Set a new prefix for the bot on your server
+* 👥 `!!disable [group/command]` Disables a command or command group on your server.
+* 👥 `!!enable [group/command]` Enables a command or command group on your server.
 
-# Command usable by bot moderator or higher
-!!report -show @user|report_Id 
-
-# Command usable by bot Administrator or higher
-!!report -del report_Id
-```
 
 ### Social
 
-* `!!bang @user` Wow ... That's nice to 🔫 your friends !
-* `!!kiss @user` Mooooh so cute !
-* `!!slap @use` Ouch that had to hurt
-* `!!claim` Later you will be able to claim prizes
+* ⠀⠀⠀`!!bang <user>` Wow ... That's nice to 🔫 your friends !
+* ⠀⠀⠀`!!slap <user>` Ouch that had to hurt
+* ⠀⠀⠀`!!kiss <user>` Mooooh so cute !
+* ⠀⠀⠀`!!hug <user>` That's not really covid friendly (⊙_⊙;)
+* ⠀⠀⠀`!!pat <user>` :3
 
-### Server
+## Utility
 
-* `!!info` Gives you infos about the server
-* `!!stats` Gives you some stats about the bot
+* ⠀⠀⠀`!!bot-info` Gets information about the bot.
+* 👥 `!!user-info [user]` Gets information about a member.
+* 👥 `!!ranking [user]` Gets your ranking on a server.
+* 👥 `!!experience [user]` Gets your experience on a server.
+* ⠀⠀⠀`!!help <group/command>` Displays a list of available commands, or detailed information for a specified command.
+* ⠀⠀⠀`!!ping` Wow ... That's a revolution this type of command (╯‵□′)╯︵┻━┻
 
-### User
+## Support
 
-* `!!rank ((@user)` See your xp and your rank on the server
-* `!!leaderboard (@user)` Get a clean and nice leaderboard of the 5 first users on this server and it gives you your rank
-* `!!ping` Wow ... that's a revolution !!!
-* `!!help (command)` A little bit of help
+* ⠀⠀⠀`!!create-request ["command"|"bug"|"other"] [details]` Create a new request for JamesBot. Will apear on the support server.
+* ⠀⠀⠀`!!track-request [ID]` Track an opened request for JamesBot.
+* ⠀⠀⠀`!!support` Gets the support server of JamesBot
 
 ## More about the bot
 
