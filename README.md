@@ -5,10 +5,6 @@ For support and feature requests join our discord server: https://discord.gg/RFs
 
 [Add bot to your server](https://discord.com/api/oauth2/authorize?client_id=425377070525317120&permissions=306048080&scope=bot)
 
-## Build
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8c208bec-f36e-4ef3-a336-a404b0b04175/deploy-status)](https://app.netlify.com/sites/elegant-boyd-cca005/deploys)
-
 ## Commands
 
 The default prefix for JamesBot is `!!` you can customise it as desired. You are also able to @mention the bot to launch command instead of using his prefix.
