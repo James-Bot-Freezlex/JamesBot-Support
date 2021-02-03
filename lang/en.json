@@ -1,0 +1,291 @@
+{
+  "common": {
+    "c_disabled": "The `{{command}}` command is disabled.",
+    "invalid": "You provided an invalid `{{label}}`. Please try again.",
+    "cancel": "Respond with `cancel` to cancel the command.",
+    "time": "The command will automatically be cancelled in {{time}}seconds."
+  },
+  "commands": {
+    "disable": {
+      "infos": {
+        "description": "Disables a command or command group.",
+        "details": "The argument must be the name/ID (partial or whole) of a command or command group. Only administrators may use this command."
+      }
+    },
+    "enable": {
+      "infos": {
+        "description": "Enables a command or command group.",
+        "details": "The argument must be the name/ID (partial or whole) of a command or command group. Only administrators may use this command."
+      }
+    },
+    "groups": {
+      "infos": {
+        "description": "Lists all command groups.",
+        "details": "Only administrators may use this command."
+      }
+    },
+    "load": {
+      "infos": {
+        "description": "Loads a new command.",
+        "details": "The argument must be full name of the command in the format of `group:memberName`. Only the bot owner(s) may use this command."
+      }
+    },
+    "reload": {
+      "infos": {
+        "description": "Reloads a command or command group.",
+        "details": "The argument must be the name/ID (partial or whole) of a command or command group. Providing a command group will reload all of the commands in that group. Only the bot owner(s) may use this command."
+      }
+    },
+    "unload": {
+      "infos": {
+        "description": "Unloads a command.",
+        "details": "The argument must be the name/ID (partial or whole) of a command. Only the bot owner(s) may use this command."
+      }
+    }
+  },
+  "social": {
+    "bang": {
+      "infos" :{
+        "description": "Shoot a member of the guild",
+        "details": "The argument must be the mention, the ID, the full or a part of the member username.",
+        "member": "Which member would you like to shoot on ?"
+      },
+      "user": "{{user_1}} shoots {{user_2}}",
+      "self": "{{user_1}} is shooting ... himself ..."
+    },
+    "coffee": {
+      "infos": {
+        "description": "Serve a coffee to a member of the guild",
+        "details": "The argument must be the mention, the ID, the full or a part of the member username."
+      },
+      "user": "{{user_1}} serve a coffee to {{user_2}}",
+      "bot": "{{user_1}} serve a coffee to {{user_2}}"
+    },
+    "cry": {
+      "infos": {
+        "description": "Cry a little bit 😢",
+        "details": " "
+      },
+      "user": "**{{user}}** is crying"
+    },
+    "hug": {
+      "infos": {
+        "description": "Hug a member of the guild",
+        "details": "The argument must be the mention, the ID, the full or a part of the member username."
+      },
+      "bot": "You are hugging me",
+      "user": "{{user_1}} is hugging {{user_2}}",
+      "self": "{{user}} is hugging himself ... uh that's awkward"
+    },
+    "kiss": {
+      "infos": {
+        "description": "Kiss a member of the guild.",
+        "details": "The argument must be the mention, the ID, the full or a part of the member username."
+      },
+      "user": "{{user_1}} is kissing {{user_2}}",
+      "self": "{{user_2}} is kissing himself ... common bro **WHY** ?"
+    },
+    "pat": {
+      "infos": {
+        "description": "Pat a member of the guild",
+        "details": "The argument must be the mention, the ID, the full or a part of the member username."
+      },
+      "user": "{{user_1}} pats {{user_2}}",
+      "self": "{{user_1}} pats himself"
+    },
+    "punch": {
+      "infos": {
+        "description": "Punch a member of the guild",
+        "details": "The argument must be the mention, the ID, the full or a part of the member username."
+      },
+      "user": "**{{user_1}}** punchs **{{user_2}}**",
+      "self": "**{{user_1}}** is punching himself ..."
+    },
+    "slap": {
+      "infos": {
+        "description": "Slap a member of the guild",
+        "details": "The argument must be the mention, the ID, the full or a part of the member username."
+      },
+      "user": "{{user_1}} slaps {{user_2}}",
+      "self": "{{user_1}} is slapping himself"
+    },
+    "wink": {
+      "infos": {
+        "description": "Do wink to a member of the guild",
+        "details": "The argument must be the mention, the ID, the full or a part of the member username."
+      },
+      "wink": "{{user_1}} winks",
+      "user": "{{user_1}} winks to {{user_2}}",
+      "self": "{{user_1}} is winking himself"
+    }
+  },
+  "util": {
+    "help": {
+      "infos": {
+        "description": "Displays a list of available commands, or detailed information for a specified command.",
+        "details": "The command may be part of a command name or a whole command name.\nIf it isn't specified, all available commands will be listed."
+      },
+      "help-description": "To run a command in {{guild}} use {{usage}}.\nFor exemple, {{example}}.\n\nUse {{detail}} to view detailed information about a specific command.\nUse {{all}} to view a list of *all* commands, not just available ones."
+    },
+    "prefix": {
+      "infos": {
+        "description": "Set the guild prefix",
+        "details": "If no prefix is provided, the current prefix will be shown. If the prefix is \"default\", the prefix will be reset to the bot's default prefix. If the prefix is \"none\", the prefix will be removed entirely, only allowing mentions to run commands. Only administrators may change the prefix."
+      }
+    },
+    "ping": {
+      "infos": {
+        "description": "Get the bot's ping"
+      }
+    },
+    "eval": {
+      "infos": {
+        "description": "Executes JavaScript code.",
+        "details": "Only the bot owner(s) may use this command."
+      }
+    },
+    "experience": {
+      "infos": {
+        "description": "Get your, or a member experience",
+        "details": ""
+      }
+    },
+    "bot-info": {
+      "infos": {
+        "description": "Get some useful information about the bot",
+        "details" : "You can get information about the bot like for example his version, the amount of guild the bot is in, the amount of command than the bot manage, ..."
+      }
+    },
+    "guild-info": {
+      "infos": {
+        "description": "Get some useful information about this guild",
+        "details": "You can get information about the bot like for example his version, the amount of guild the bot is in, the amount of command than the bot manage, ..."
+      },
+      "embed": {
+        "title": "Some informations about {{guild}}",
+        "members": {
+          "name":"",
+          "value": ""
+        }
+      }
+    },
+    "profile-picture": {
+      "infos": {
+        "description": "Get the profile picture of a member static or animated",
+        "details": "Get the profile picture of a member",
+        "subject": "Which member do you want to the the profile picture of ?",
+        "dynamic": "Would you like to set the animated profile picture ?"
+      },
+      "user_pp": "Here the profile picture of {{subject}}",
+      "guild_pp": "Here the icon of {{subject}}",
+      "not_member": "The argument {{args}} doesn't appear to be a valid member."
+    },
+    "ranking": {
+      "infos": {
+        "description": "Check your actual rank into the server."
+      }
+    },
+    "user-info": {
+      "infos": {
+        "description": "Get some useful information about member"
+      }
+    }
+  },
+  "settings": {
+    "onjoin-role": {
+      "infos": {
+        "description": "Set a role which will be automatically given.",
+        "details": "",
+        "role": "Which role do you want to give when a member join the guild?"
+      },
+      "show-config": "When a member join this guild he will automatically received those roles : {{roles}}",
+      "no-role": "The role {{role}} is not registered as a role to be given to a member when he joins the guild.",
+      "removed": "The role {{role}} will not longer be given to members when they join the guild."
+    },
+    "language": {
+      "infos": {
+        "description": "Set the bot language on the guild",
+        "details": " ",
+        "language": "What would you like to set the bot's language to?"
+      },
+      "language": "The bot language is actually set to `English [en]`",
+      "set": "The bot language is now defined to `English [en]`"
+    },
+    "role-reaction": {
+      "infos": {
+        "description": "Unavailable "
+      }
+    }
+  },
+  "support": {
+    "partner": {
+      "infos": {
+        "description": "Get some information about our partners.",
+        "details": ""
+      },
+      "th-details": "🚧 this section is not finished yet ! We will be ready soon !",
+      "partners": "**__All the partners who support JamesBot__**",
+      "not-partner": "The argument **{{args}}** doesn't seems to be a **{{bot_name}}** partner"
+    },
+    "submit":  {
+      "infos": {
+        "description": "Let's improve the bot together !",
+        "details": "You have an idea to improve the bot or you have found a bug ? Create a quick request and let developers take care of it !",
+        "action": "Which type of request do you want to create ? `command` | `bug` | `other`",
+        "detail": "Please describe as clear as possible your request. *Markdown is supported*"
+      }
+    },
+    "invite": {
+      "infos": {
+        "description": "Get the invite link of JamesBot",
+        "details": null
+      }
+    },
+    "edit": {
+      "infos": {
+        "description": "Edit the status of a request",
+        "details": " ",
+        "hash": "Which request do you wanna manage status ? *use the provided unique ID of the request*",
+        "validity": "Which status do you wanna put for this request ? ⏲, 🛠, ✅, ❌",
+        "reason": "Provide a reason for this request edit."
+      }
+    },
+    "support": {
+      "infos": {
+        "description": "Get some help for the bot"
+      },
+      "embed-description": "Join the JamesBot support server right now to being stayed tuned for new features or getting some help about the bot. [Click here to join](https://discord.com/invite/MKa35PQ)"
+    }
+  },
+  "moderation": {
+    "ban": {
+      "infos": {
+        "description": "ban a member of the guild"
+      },
+      "self": "I don't think than ban yourself is a pretty good idea ...",
+      "banned": "[{{date}}] User {{username}} has been banned by {{moderator}} reason : {{reason}}\nUser ID : {{id}}",
+      "unable": "Unable to ban {{user}}. `{{err}}`"
+    },
+    "delete": {
+      "infos": {
+        "description": "Delete an amount of messages"
+      }
+    },
+    "manage-experience": {
+      "infos": {
+        "description": "Manage the experience or the level of a member"
+      }
+    },
+    "unban": {
+      "infos": {
+        "description" : "Unban a user and allow him to join the guild again"
+      },
+      "unbanned": "Member {{user}} has been unbanned from {{guild}} by {{moderator}}. Reason : {{reason}}"
+    },
+    "manage-social": {
+      "infos": {
+        "description": "Manage the gifs database of the bot"
+      }
+    }
+  }
+}

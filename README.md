@@ -1,7 +1,11 @@
 # JamesBot - Support
+[![Discord Bots](https://top.gg/api/widget/status/425377070525317120.svg)](https://top.gg/bot/425377070525317120)
+[![Discord Bots](https://top.gg/api/widget/lib/425377070525317120.svg?noavatar=true)](https://top.gg/bot/425377070525317120)
+[![Discord Bots](https://top.gg/api/widget/owner/425377070525317120.svg?noavatar=true)](https://top.gg/bot/425377070525317120)
+
 JamesBot allows you to manage your server and add content to it.
 
-For support and feature requests join our discord server: https://discord.gg/RFsgJcN
+For support and feature requests join our discord server: https://www.jamesbot.fr/support
 
 [Add bot to your server](https://discord.com/api/oauth2/authorize?client_id=425377070525317120&permissions=306048080&scope=bot)
 

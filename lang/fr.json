@@ -1,0 +1,284 @@
+{
+  "common": {
+    "c_disabled": "La commande `{{command}}` est désactivée.",
+    "invalid": "L'argument `{{label}}` est invalide. S'il vous plaît, réessayez.",
+    "cancel": "Répondre avec `cancel` pour annuler la commande.",
+    "time": "La commande sera automatiquement annulé dans {{time}} secondes."
+  },
+  "commands": {
+    "disable": {
+      "infos": {
+        "description": "Désactiver une commande ou un groupe.",
+        "details": "L'argument doit être le nom/l'ID (partiel ou complet) d'un commande ou d'un groupe de commandes. Seuls les administrateurs peuvent utiliser cette commande."
+      }
+    },
+    "enable": {
+      "infos": {
+        "description": "Activer une commande ou un groupe.",
+        "details": "L'argument doit être le nom/l'ID (partiel ou complet) d'un commande ou d'un groupe de commandes. Seuls les administrateurs peuvent utiliser cette commande."
+      }
+    },
+    "groups": {
+      "infos": {
+        "description": "Afficher toutes les commandes d'un groupe.",
+        "details": "Seuls les administrateurs peuvent utiliser cette commande."
+      }
+    },
+    "load": {
+      "infos": {
+        "description": "Charger une nouvelle commande.",
+        "details": "L'argument doit être le nom complets d'une commande dans le format `group:memberName`. Seul(s) le/les propriétaire(s) du bot peuvent utiliser cette commande."
+      }
+    },
+    "reload": {
+      "infos": {
+        "description": "Recharger une commande ou un groupe de commandes.",
+        "details": "L'argument doit être le nom/l'ID (partiel ou complet) d'un commande ou d'un groupe de commande. Renseigner un groupe résultera d'un rechargement de toutes le commandes du groupe. Seul(s) le/les propriétaire(s) du bot peuvent utiliser cette commande."
+      }
+    },
+    "unload": {
+      "infos": {
+        "description": "Décharger une commande ou un groupe de commandes.",
+        "details": "L'argument doit être le nom/l'ID (partiel ou complet) d'un commande ou d'un groupe de commandes. Seul(s) le/les propriétaire(s) du bot peuvent utiliser cette commande."
+      }
+    }
+  },
+  "social": {
+    "bang": {
+      "infos" :{
+        "description": "Tirer sur un membre",
+        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre",
+        "member": "Sur quel membre voulez-vous tirer ?"
+      },
+      "user": "{{user_1}} tire sur {{user_2}}",
+      "self": "{{user_1}} se tire dessus ..."
+    },
+    "coffee": {
+      "infos": {
+        "description": "Servir un café à un membre du serveur",
+        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre"
+      },
+      "user": "{{user_1}} sert un café à {{user_2}}",
+      "bot": "{{user_1}} sert un café à {{user_2}}"
+    },
+    "cry": {
+      "infos": {
+        "description": "Pleurer un petit peu 😢"
+      },
+      "user": "**{{user}}** pleure"
+    },
+    "hug": {
+      "infos": {
+        "description": "Faire un câlin à un membre du serveur",
+        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre"
+      },
+      "bot": "Tu me fais un câlin 🤗",
+      "user": "{{user_1}} fait un câlin à {{user_2}}",
+      "self": "{{user}} se fait un câlin a lui même ... hum c'est gênant"
+    },
+    "kiss": {
+      "infos": {
+        "description": "Embrasser un membre du serveur.",
+        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre"
+      },
+      "user": "{{user_1}} embrasse {{user_2}}",
+      "self": "{{user_2}} se fait un bisous à lui même ... mec **POURQUOI** ?"
+    },
+    "pat": {
+      "infos": {
+        "description": "Faire une caresse a un membre du serveur.",
+        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre"
+      },
+      "user": "{{user_1}} caresse {{user_2}}",
+      "self": "{{user_1}} se car... nan nan stop j'arrête là !"
+    },
+    "punch": {
+      "infos": {
+        "description": "Frapper un membre du serveur",
+        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre"
+      },
+      "user": "**{{user_1}}** frappe **{{user_2}}**",
+      "self": "**{{user_1}}** se frappe lui même ..."
+    },
+    "slap": {
+      "infos": {
+        "description": "Gifler un membre du serveur",
+        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre"
+      },
+      "user": "{{user_1}} gifle {{user_2}}",
+      "self": "{{user_1}} se gifle lui même."
+    },
+    "wink": {
+      "infos": {
+        "description": "Faire un clin d'œil a un membre du serveur",
+        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre"
+      },
+      "wink": "{{user_1}} fait un clin d'œil",
+      "user": "{{user_1}} fait un clin d'œil à {{user_2}}",
+      "self": "{{user_1}} se fait un clin d'œil dans le miroir"
+    }
+  },
+  "util": {
+    "help": {
+      "infos": {
+        "description": "Afficher la liste complète des commandes, ou des informations détaillées d'une commande.",
+        "details": "La commande doit être une partie ou l'entièreté du nom de la commande. Si rien n'est spécifie, Tout les groupes de commandes seront affichés."
+      },
+      "help-description": "Pour lancer une commande dans {{guild}} utilisez {{usage}}.\nPar exemple, {{example}}.\n\nUtilisez {{detail}} pour voir les informations détaillées d'une commande en particulier.\nUtiliser {{all}} la liste de *toutes* les commandes, et pas seulement celles disponibles."
+    },
+    "prefix": {
+      "infos": {
+        "description": "Définir le préfixe du serveur",
+        "details": "Si aucun préfixe n'est précisé, l'actuel sera affiché. Si le préfixe est \"default\", le préfixe sera paramétré au prefix par défaut du bot. Si le préfixe est \"none\", le préfixe sera entièrement retiré, n'autorisant que les mentions du bot pour exécuter les commandes. Seuls les administrateurs peuvent changer le préfixe."
+      }
+    },
+    "ping": {
+      "infos": {
+        "description": "Afficher le ping du bot"
+      }
+    },
+    "eval": {
+      "infos": {
+        "description": "Exécuter du code JavaScript.",
+        "details": "Seul(s) le(s) propriétaire(s) du bot peut/peuvent utiliser cette commande"
+      }
+    },
+    "experience": {
+      "infos": {
+        "description": "Afficher votre experience ou celle d'un membre",
+        "details": ""
+      }
+    },
+    "bot-info": {
+      "infos": {
+        "description": "Afficher quelques informations utiles concernant le bot",
+        "details" : "You can get information about the bot like for example his version, the amount of guild the bot is in, the amount of command than the bot manage, ..."
+      }
+    },
+    "guild-info": {
+      "infos": {
+        "description": "Afficher quelques informations utiles concernant le serveur",
+        "details": "You can get information about the bot like for example his version, the amount of guild the bot is in, the amount of command than the bot manage, ..."
+      }
+    },
+    "profile-picture": {
+      "infos": {
+        "description": "Obtenez la photo de profil d'un membre statique ou animée.",
+        "details": "Obtenez la photo de profil d'un membre.",
+        "subject": "De quel membre ou serveur souhaitez-vous obtenir la photo de profil ?",
+        "dynamic": "Voulez vous obtenir la version animée de sa PP ?"
+      },
+      "user_pp": "Voici la photo de profil de {{subject}}",
+      "guild_pp": "Voici l'icône du serveur {{subject}}",
+      "not_member": "{{args}} ne semble pas être un membre valide."
+    },
+    "ranking": {
+      "infos": {
+        "description": "Afficher votre rang actuel sur le serveur."
+      }
+    },
+    "user-info": {
+      "infos": {
+        "description": "Afficher quelques informations utiles concernant un utilisateur"
+      }
+    }
+  },
+  "settings": {
+    "onjoin-role": {
+      "infos": {
+        "description": "Set a role which will be automatically given.",
+        "details": "",
+        "role": "Which role do you want to give when a member join the guild?"
+      },
+      "show-config": "Quand un membre rejoindra ce serveur il obtiendra automatiquement le(s) rôle(s) : {{roles}}",
+      "no-role": "Le rôle {{role}} n'est pas enregistré en tant que rôle a attribuer automatiquement lorsqu'un membre rejoint le serveur.",
+      "removed": "Le rôle {{role}} ne sera plus automatiquement attribué lorsqu'un membre rejoindra le serveur."
+    },
+    "language": {
+      "infos": {
+        "description": "Définir la langue du bot sur le serveur",
+        "details": " ",
+        "language": "Quelle langue voulez-vous définir pour le bot ?"
+      },
+      "language": "La langue du bot est actuellement paramétrée en `Français[fr]`",
+      "set": "La langue du bot est maintenant paramétrée en `Français [fr]`"
+    },
+    "role-reaction": {
+      "infos": {
+        "description": "Indisponible ... mais bientôt disponible ! "
+      }
+    }
+  },
+  "support": {
+    "partner": {
+      "infos": {
+        "description": "Get some information about our partners.",
+        "details": ""
+      },
+      "th-details": "🚧 Cette section n'est pas encore terminée ! Nous seront bientôt prêts !",
+      "partners": "Tous les partenaires qui soutiennent JamesBot",
+      "not-partner": "L'argument **{{args}}** ne semble pas être une partenaire de **{{bot_name}}**."
+    },
+    "submit":  {
+      "infos": {
+        "description": "Améliorons le bot ensemble !",
+        "details": "Vous avez une idée pour améliorer le bot ou vous avez trouvé un bug? Créez un nouveau ticket et laissez les développeurs prendre soin de répondre à votre demande !",
+        "action": "Quel est le type de votre ticket ? `command` | `bug` | `other`",
+        "detail": "S'il vous plaît décrivez le plus précisément possible votre demande. *Le Markdown est supporté*"
+      }
+    },
+    "invite": {
+      "infos": {
+        "description": "Obtenir le lien d'invitation de JamesBot",
+        "details": null
+      }
+    },
+    "edit": {
+      "infos": {
+        "description": "Éditer le status d'un ticket",
+        "details": " ",
+        "hash": "De quelle requête voulez-vous modifier le statu ? *utilisez l'ID unique du ticket pour éditer son status*",
+        "validity": "Quel status voulez-vous définir pour cette requête? ⏲, 🛠, ✅, ❌",
+        "reason": "Précisez une raison ou un message a cette modification."
+      }
+    },
+    "support": {
+      "infos": {
+        "description": "Obtenir un peu d'aide pour le bot"
+      },
+      "embed-description": "Rejoignez maintenant le serveur de support de JamesBot et soyez tenu au courant des nouvelles fonctionnalités ou obtenez de l'aide pour le bot. [Cliquez ici pour rejoindre](https://discord.com/invite/MKa35PQ)"
+    }
+  },
+  "moderation": {
+    "ban": {
+      "infos": {
+        "description": "ban a member of the guild"
+      },
+      "self": "Je ne crois pas que vouloir se ban soit une bonne idée ...",
+      "banned": "[{{date}}] {{username}} a été banni par {{moderator}} pour la raison : {{reason}}\nID de l'utilisateur: {{id}}",
+      "unable": "Impossible de bannir {{user}}. `{{err}}`"
+    },
+    "delete": {
+      "infos": {
+        "description": "Supprimer un certain nombre de messages."
+      }
+    },
+    "manage-experience": {
+      "infos": {
+        "description": "Gérer l'expérience ou le niveau d'un utilisateur."
+      }
+    },
+    "unban": {
+      "infos": {
+        "description" : "Débanir un utilisateur et lui permettre de rejoindre a nouveau le serveur."
+      },
+      "unbanned": "L'utilisateur {{user}} a été débanni de {{guild}} par {{moderator}}. Raison : {{reason}}"
+    },
+    "manage-social": {
+      "infos": {
+        "description": "Gérer les gifs de la base de données."
+      }
+    }
+  }
+}
+
