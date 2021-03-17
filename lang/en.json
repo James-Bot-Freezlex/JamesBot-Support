@@ -9,14 +9,27 @@
     "disable": {
       "infos": {
         "description": "Disables a command or command group.",
-        "details": "The argument must be the name/ID (partial or whole) of a command or command group. Only administrators may use this command."
-      }
+        "details": "The argument must be the name/ID (partial or whole) of a command or command group. Only administrators may use this command.",
+        "cmd-or-grp": "Which command or group would you like to disable?"
+      },
+      "c-already-disabled" : "The command `{{stuff}}` is already disabled.",
+      "g-already-disabled" : "The group `{{stuff}}` is already disabled.",
+      "c-cantb-disabled" : "You cannot disable the command `{{stuff}}`.",
+      "g-cantb-disabled" : "You cannot disable the group `{{stuff}}`.",
+      "c-disabled" : "Disabled the command `{{stuff}}`.",
+      "g-disabled" : "Disabled the group `{{stuff}}`."
     },
     "enable": {
       "infos": {
         "description": "Enables a command or command group.",
-        "details": "The argument must be the name/ID (partial or whole) of a command or command group. Only administrators may use this command."
-      }
+        "details": "The argument must be the name/ID (partial or whole) of a command or command group. Only administrators may use this command.",
+        "cmd-or-grp": "Which command or group would you like to enable?"
+      },
+      "c-enabled": "Enabled the command `{{stuff}}`{{details}}.",
+      "g-enabled": "Enabled the group `{{stuff}}`{{details}}.",
+      "c-already-enabled": "The command `{{stuff}}` is already enabled{{details}}.",
+      "g-already-enabled": "The group `{{stuff}}` is already enabled{{details}}.",
+      "grp-disabled": ", but the `{{grp}}` group is disabled, so it still can't be used"
     },
     "groups": {
       "infos": {
@@ -27,19 +40,22 @@
     "load": {
       "infos": {
         "description": "Loads a new command.",
-        "details": "The argument must be full name of the command in the format of `group:memberName`. Only the bot owner(s) may use this command."
+        "details": "The argument must be full name of the command in the format of `group:memberName`. Only the bot owner(s) may use this command.",
+        "command": "Which command would you like to load?"
       }
     },
     "reload": {
       "infos": {
         "description": "Reloads a command or command group.",
-        "details": "The argument must be the name/ID (partial or whole) of a command or command group. Providing a command group will reload all of the commands in that group. Only the bot owner(s) may use this command."
+        "details": "The argument must be the name/ID (partial or whole) of a command or command group. Providing a command group will reload all of the commands in that group. Only the bot owner(s) may use this command.",
+        "cmd-or-grp": "Which command or group would you like to reload?"
       }
     },
     "unload": {
       "infos": {
         "description": "Unloads a command.",
-        "details": "The argument must be the name/ID (partial or whole) of a command. Only the bot owner(s) may use this command."
+        "details": "The argument must be the name/ID (partial or whole) of a command. Only the bot owner(s) may use this command.",
+        "cmd-or-grp": "Which command would you like to unload?"
       }
     }
   },
@@ -56,7 +72,8 @@
     "coffee": {
       "infos": {
         "description": "Serve a coffee to a member of the guild",
-        "details": "The argument must be the mention, the ID, the full or a part of the member username."
+        "details": "The argument must be the mention, the ID, the full or a part of the member username.",
+        "member": "To which member would you like to serve or make serve a coffee?"
       },
       "user": "{{user_1}} serve a coffee to {{user_2}}",
       "bot": "{{user_1}} serve a coffee to {{user_2}}"
@@ -64,14 +81,15 @@
     "cry": {
       "infos": {
         "description": "Cry a little bit 😢",
-        "details": " "
+        "details": "When you're hurt u need to cry a little bit ..."
       },
       "user": "**{{user}}** is crying"
     },
     "hug": {
       "infos": {
         "description": "Hug a member of the guild",
-        "details": "The argument must be the mention, the ID, the full or a part of the member username."
+        "details": "The argument must be the mention, the ID, the full or a part of the member username.",
+        "member": "Who would you like to hug?"
       },
       "bot": "You are hugging me",
       "user": "{{user_1}} is hugging {{user_2}}",
@@ -80,7 +98,8 @@
     "kiss": {
       "infos": {
         "description": "Kiss a member of the guild.",
-        "details": "The argument must be the mention, the ID, the full or a part of the member username."
+        "details": "The argument must be the mention, the ID, the full or a part of the member username.",
+        "member": "Who would like to kiss?"
       },
       "user": "{{user_1}} is kissing {{user_2}}",
       "self": "{{user_2}} is kissing himself ... common bro **WHY** ?"
@@ -88,7 +107,8 @@
     "pat": {
       "infos": {
         "description": "Pat a member of the guild",
-        "details": "The argument must be the mention, the ID, the full or a part of the member username."
+        "details": "The argument must be the mention, the ID, the full or a part of the member username.",
+        "member": "To which member would you like to give a headpat?"
       },
       "user": "{{user_1}} pats {{user_2}}",
       "self": "{{user_1}} pats himself"
@@ -96,7 +116,8 @@
     "punch": {
       "infos": {
         "description": "Punch a member of the guild",
-        "details": "The argument must be the mention, the ID, the full or a part of the member username."
+        "details": "The argument must be the mention, the ID, the full or a part of the member username.",
+        "member": "Who would you like to punch?"
       },
       "user": "**{{user_1}}** punchs **{{user_2}}**",
       "self": "**{{user_1}}** is punching himself ..."
@@ -104,7 +125,8 @@
     "slap": {
       "infos": {
         "description": "Slap a member of the guild",
-        "details": "The argument must be the mention, the ID, the full or a part of the member username."
+        "details": "The argument must be the mention, the ID, the full or a part of the member username.",
+        "member": "Who would you like to slap?"
       },
       "user": "{{user_1}} slaps {{user_2}}",
       "self": "{{user_1}} is slapping himself"
@@ -112,7 +134,8 @@
     "wink": {
       "infos": {
         "description": "Do wink to a member of the guild",
-        "details": "The argument must be the mention, the ID, the full or a part of the member username."
+        "details": "The argument must be the mention, the ID, the full or a part of the member username.",
+        "member": "Who would you wink to?"
       },
       "wink": "{{user_1}} winks",
       "user": "{{user_1}} winks to {{user_2}}",
@@ -123,15 +146,23 @@
     "help": {
       "infos": {
         "description": "Displays a list of available commands, or detailed information for a specified command.",
-        "details": "The command may be part of a command name or a whole command name.\nIf it isn't specified, all available commands will be listed."
+        "details": "The command may be part of a command name or a whole command name.\nIf it isn't specified, all available commands will be listed.",
+        "cmdOrGrp": "Which command or group would you like to get some help?"
       },
       "help-description": "To run a command in {{guild}} use {{usage}}.\nFor exemple, {{example}}.\n\nUse {{detail}} to view detailed information about a specific command.\nUse {{all}} to view a list of *all* commands, not just available ones."
     },
     "prefix": {
       "infos": {
         "description": "Set the guild prefix",
-        "details": "If no prefix is provided, the current prefix will be shown. If the prefix is \"default\", the prefix will be reset to the bot's default prefix. If the prefix is \"none\", the prefix will be removed entirely, only allowing mentions to run commands. Only administrators may change the prefix."
-      }
+        "details": "If no prefix is provided, the current prefix will be shown. If the prefix is \"default\", the prefix will be reset to the bot's default prefix. If the prefix is \"none\", the prefix will be removed entirely, only allowing mentions to run commands. Only administrators may change the prefix.",
+        "prefix": "What would you like to set the bot's prefix to?"
+      },
+      "owner-only": "Only the bot owner(s) may change the global command prefix.",
+      "admin-only": "Only administrators may change the command prefix.",
+      "prefix-default": "Reset the command prefix to the default (currently {{prefix}}).",
+      "prefix-set": "Set the command prefix to `{{prefix}}`",
+      "prefix-removed": "Removed the command prefix entirely.",
+      "response": "{{response}} To run commands, use {{usage}}"
     },
     "ping": {
       "infos": {
@@ -141,19 +172,22 @@
     "eval": {
       "infos": {
         "description": "Executes JavaScript code.",
-        "details": "Only the bot owner(s) may use this command."
+        "details": "Only the bot owner(s) may use this command.",
+        "script": "What code would you like to evaluate?"
       }
     },
     "experience": {
       "infos": {
         "description": "Get your, or a member experience",
-        "details": ""
+        "details": "",
+        "user": "Who would you like to see the experience level to ?"
       }
     },
     "bot-info": {
       "infos": {
         "description": "Get some useful information about the bot",
-        "details" : "You can get information about the bot like for example his version, the amount of guild the bot is in, the amount of command than the bot manage, ..."
+        "details" : "You can get information about the bot like for example his version, the amount of guild the bot is in, the amount of command than the bot manage, ...",
+        "detailed": "Would you like to details all the infos about the bot?"
       }
     },
     "guild-info": {
@@ -164,7 +198,7 @@
       "embed": {
         "title": "Some informations about {{guild}}",
         "members": {
-          "name":"",
+          "name": "",
           "value": ""
         }
       }
@@ -174,7 +208,7 @@
         "description": "Get the profile picture of a member static or animated",
         "details": "Get the profile picture of a member",
         "subject": "Which member do you want to the the profile picture of ?",
-        "dynamic": "Would you like to set the animated profile picture ?"
+        "dynamic": "Would you like to get the animated profile picture ?"
       },
       "user_pp": "Here the profile picture of {{subject}}",
       "guild_pp": "Here the icon of {{subject}}",
@@ -182,12 +216,14 @@
     },
     "ranking": {
       "infos": {
-        "description": "Check your actual rank into the server."
+        "description": "Check your actual rank into the server.",
+        "member": "Who would you like to see the experience level to ?"
       }
     },
     "user-info": {
       "infos": {
-        "description": "Get some useful information about member"
+        "description": "Get some useful information about member",
+        "user": "What user would you like to snoop on?"
       }
     }
   },
@@ -238,7 +274,7 @@
     "invite": {
       "infos": {
         "description": "Get the invite link of JamesBot",
-        "details": null
+        "details": "Get all the important links for JamesBot"
       }
     },
     "edit": {
@@ -260,25 +296,38 @@
   "moderation": {
     "ban": {
       "infos": {
-        "description": "ban a member of the guild"
+        "description": "ban a member of the guild",
+        "details": "The argument must be the mention, the ID, the full or a part of the member username.Only moderator or user able to ban may use this command.",
+        "member": "Which member would you like to ban ?",
+        "reason": "Why would you like to ban this user ?"
       },
       "self": "I don't think than ban yourself is a pretty good idea ...",
+      "random": "I don't think than ban {{user}} randomly is a pretty good idea ...",
       "banned": "[{{date}}] User {{username}} has been banned by {{moderator}} reason : {{reason}}\nUser ID : {{id}}",
       "unable": "Unable to ban {{user}}. `{{err}}`"
     },
     "delete": {
       "infos": {
-        "description": "Delete an amount of messages"
-      }
+        "description": "Delete an amount of messages",
+        "details": "Delete faster an amount of messages in a guild channel.",
+        "amount": "How many messages would you like to delete?"
+      },
+      "delete": "{{amount}} messages have been successfully removed.",
+      "error-older": "Sorry but I'm not allowed to delete messages older than 2 weeks. Try again with newer messages !"
     },
     "manage-experience": {
       "infos": {
-        "description": "Manage the experience or the level of a member"
+        "description": "Manage the experience or the level of a member",
+        "action": "Which type of action do you want to apply? `add`, `remove` or `delete`?",
+        "member": "Which member do you want to edit his experience?",
+        "amount": "How many experience would you give to this user ?"
       }
     },
     "unban": {
       "infos": {
-        "description" : "Unban a user and allow him to join the guild again"
+        "description" : "Unban a user and allow him to join the guild again",
+        "member": "Which member would you like to unban?",
+        "reason": "Why would you like to unban this member?"
       },
       "unbanned": "Member {{user}} has been unbanned from {{guild}} by {{moderator}}. Reason : {{reason}}"
     },
