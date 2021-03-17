@@ -9,14 +9,27 @@
     "disable": {
       "infos": {
         "description": "Désactiver une commande ou un groupe.",
-        "details": "L'argument doit être le nom/l'ID (partiel ou complet) d'un commande ou d'un groupe de commandes. Seuls les administrateurs peuvent utiliser cette commande."
-      }
+        "details": "L'argument doit être le nom/l'ID (partiel ou complet) d'un commande ou d'un groupe de commandes. Seuls les administrateurs peuvent utiliser cette commande.",
+        "cmd-or-grp": "Quel commande ou groupe de commandes voulez-vous désactiver?"
+      },
+      "c-already-disabled" : "la commande `{{stuff}}` est déjà désactivée.",
+      "g-already-disabled" : "le groupe `{{stuff}}` est déjà désactivé.",
+      "c-cantb-disabled" : "Vous ne pouvez pas désactiver la commande `{{stuff}}`.",
+      "g-cantb-disabled" : "Vous ne pouvez pas désactiver le groupe `{{stuff}}`.",
+      "c-disabled" : "La commande `{{stuff}}` à été désactivée.",
+      "g-disabled" : "le groupe `{{stuff}}` à  été désactivé."
     },
     "enable": {
       "infos": {
         "description": "Activer une commande ou un groupe.",
-        "details": "L'argument doit être le nom/l'ID (partiel ou complet) d'un commande ou d'un groupe de commandes. Seuls les administrateurs peuvent utiliser cette commande."
-      }
+        "details": "L'argument doit être le nom/l'ID (partiel ou complet) d'un commande ou d'un groupe de commandes. Seuls les administrateurs peuvent utiliser cette commande.",
+        "cmd-or-grp": "Quel commande ou groupe de commandes voulez-vous activer?"
+      },
+      "c-enabled": "La commande `{{stuff}}` à été activée{{details}}.",
+      "g-enabled": "Le groupe `{{stuff}}`à été activé{{details}}.",
+      "c-already-enabled": "La commande `{{stuff}}` est déjà actif{{details}}.",
+      "g-already-enabled": "Le groupe `{{stuff}}` est déjà actif{{details}}.",
+      "grp-disabled": ", mais le groupe`{{grp}}` est désactivée, est reste donc inutilisable"
     },
     "groups": {
       "infos": {
@@ -27,19 +40,22 @@
     "load": {
       "infos": {
         "description": "Charger une nouvelle commande.",
-        "details": "L'argument doit être le nom complets d'une commande dans le format `group:memberName`. Seul(s) le/les propriétaire(s) du bot peuvent utiliser cette commande."
+        "details": "L'argument doit être le nom complets d'une commande dans le format `group:memberName`. Seul(s) le/les propriétaire(s) du bot peuvent utiliser cette commande.",
+        "command": "Quelle commande voulez-vous charger?"
       }
     },
     "reload": {
       "infos": {
         "description": "Recharger une commande ou un groupe de commandes.",
-        "details": "L'argument doit être le nom/l'ID (partiel ou complet) d'un commande ou d'un groupe de commande. Renseigner un groupe résultera d'un rechargement de toutes le commandes du groupe. Seul(s) le/les propriétaire(s) du bot peuvent utiliser cette commande."
+        "details": "L'argument doit être le nom/l'ID (partiel ou complet) d'un commande ou d'un groupe de commande. Renseigner un groupe résultera d'un rechargement de toutes le commandes du groupe. Seul(s) le/les propriétaire(s) du bot peuvent utiliser cette commande.",
+        "cmd-or-grp": "Quel commande ou groume de commande voulez-vous recharger?"
       }
     },
     "unload": {
       "infos": {
         "description": "Décharger une commande ou un groupe de commandes.",
-        "details": "L'argument doit être le nom/l'ID (partiel ou complet) d'un commande ou d'un groupe de commandes. Seul(s) le/les propriétaire(s) du bot peuvent utiliser cette commande."
+        "details": "L'argument doit être le nom/l'ID (partiel ou complet) d'un commande ou d'un groupe de commandes. Seul(s) le/les propriétaire(s) du bot peuvent utiliser cette commande.",
+        "cmd-or-grp": "Quelle commande voulez-vous désactiver?"
       }
     }
   },
@@ -56,21 +72,24 @@
     "coffee": {
       "infos": {
         "description": "Servir un café à un membre du serveur",
-        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre"
+        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre",
+        "member": "A quel member voulez-vous servir ou faire servir un café?"
       },
       "user": "{{user_1}} sert un café à {{user_2}}",
       "bot": "{{user_1}} sert un café à {{user_2}}"
     },
     "cry": {
       "infos": {
-        "description": "Pleurer un petit peu 😢"
+        "description": "Pleurer un petit peu 😢",
+        "details": "Ca fait pas de mal de pleurer un peu parfois ..."
       },
       "user": "**{{user}}** pleure"
     },
     "hug": {
       "infos": {
         "description": "Faire un câlin à un membre du serveur",
-        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre"
+        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre",
+        "member": "A qui voulez-vous faire un câlin?"
       },
       "bot": "Tu me fais un câlin 🤗",
       "user": "{{user_1}} fait un câlin à {{user_2}}",
@@ -79,7 +98,8 @@
     "kiss": {
       "infos": {
         "description": "Embrasser un membre du serveur.",
-        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre"
+        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre",
+        "member": "Qui voulez-vous embrasser?"
       },
       "user": "{{user_1}} embrasse {{user_2}}",
       "self": "{{user_2}} se fait un bisous à lui même ... mec **POURQUOI** ?"
@@ -87,7 +107,8 @@
     "pat": {
       "infos": {
         "description": "Faire une caresse a un membre du serveur.",
-        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre"
+        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre",
+        "member": "A qui voulez-vous faire une caresse ?"
       },
       "user": "{{user_1}} caresse {{user_2}}",
       "self": "{{user_1}} se car... nan nan stop j'arrête là !"
@@ -95,7 +116,8 @@
     "punch": {
       "infos": {
         "description": "Frapper un membre du serveur",
-        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre"
+        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre",
+        "member": "Qui voulez-vous frapper?"
       },
       "user": "**{{user_1}}** frappe **{{user_2}}**",
       "self": "**{{user_1}}** se frappe lui même ..."
@@ -103,7 +125,8 @@
     "slap": {
       "infos": {
         "description": "Gifler un membre du serveur",
-        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre"
+        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre",
+        "member": "Qui voulez-vous gifler?"
       },
       "user": "{{user_1}} gifle {{user_2}}",
       "self": "{{user_1}} se gifle lui même."
@@ -111,7 +134,8 @@
     "wink": {
       "infos": {
         "description": "Faire un clin d'œil a un membre du serveur",
-        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre"
+        "details": "L'argument doit être la mention, l'ID, une partie ou l'entièreté du nom d'utilisateur d'un membre",
+        "member": "A qui voulez-vous faire un clin d'œil?"
       },
       "wink": "{{user_1}} fait un clin d'œil",
       "user": "{{user_1}} fait un clin d'œil à {{user_2}}",
@@ -122,15 +146,23 @@
     "help": {
       "infos": {
         "description": "Afficher la liste complète des commandes, ou des informations détaillées d'une commande.",
-        "details": "La commande doit être une partie ou l'entièreté du nom de la commande. Si rien n'est spécifie, Tout les groupes de commandes seront affichés."
+        "details": "La commande doit être une partie ou l'entièreté du nom de la commande. Si rien n'est spécifie, Tout les groupes de commandes seront affichés.",
+        "cmdOrGrp": "Quelle commande ou groupes de commandes voulez-vous obtenir de l'aide?"
       },
       "help-description": "Pour lancer une commande dans {{guild}} utilisez {{usage}}.\nPar exemple, {{example}}.\n\nUtilisez {{detail}} pour voir les informations détaillées d'une commande en particulier.\nUtiliser {{all}} la liste de *toutes* les commandes, et pas seulement celles disponibles."
     },
     "prefix": {
       "infos": {
         "description": "Définir le préfixe du serveur",
-        "details": "Si aucun préfixe n'est précisé, l'actuel sera affiché. Si le préfixe est \"default\", le préfixe sera paramétré au prefix par défaut du bot. Si le préfixe est \"none\", le préfixe sera entièrement retiré, n'autorisant que les mentions du bot pour exécuter les commandes. Seuls les administrateurs peuvent changer le préfixe."
-      }
+        "details": "Si aucun préfixe n'est précisé, l'actuel sera affiché. Si le préfixe est \"default\", le préfixe sera paramétré au prefix par défaut du bot. Si le préfixe est \"none\", le préfixe sera entièrement retiré, n'autorisant que les mentions du bot pour exécuter les commandes. Seuls les administrateurs peuvent changer le préfixe.",
+        "prefix": "Quel préfixe souhaitez-vous paramétrer pour pour le bot?"
+      },
+      "owner-only": "Seuls les propriétaires du bot peuvent changer les préfixe global du bot ... Bien tenté 🤔.",
+      "admin-only": "Seuls les administrateurs peuvent changer le préfixe du bot.",
+      "prefix-default": "Le prefix du bot à été réinitialisé à celui par défaut (actuellement {{prefix}}).",
+      "prefix-set": "Le préfixe du bot à été paramétré à `{{prefix}}`",
+      "prefix-removed": "Le préfixe du bot à été entièrement retiré.",
+      "response": "{{response}} Pour lancer une commande, utilisez {{usage}}"
     },
     "ping": {
       "infos": {
@@ -140,25 +172,35 @@
     "eval": {
       "infos": {
         "description": "Exécuter du code JavaScript.",
-        "details": "Seul(s) le(s) propriétaire(s) du bot peut/peuvent utiliser cette commande"
+        "details": "Seul(s) le(s) propriétaire(s) du bot peut/peuvent utiliser cette commande",
+        "script": "Quel bloc de code voulez-vous évaluer?"
       }
     },
     "experience": {
       "infos": {
         "description": "Afficher votre experience ou celle d'un membre",
-        "details": ""
+        "details": "",
+        "user": "De qui souhaitez-vous obtenir son niveau d'expérience?"
       }
     },
     "bot-info": {
       "infos": {
         "description": "Afficher quelques informations utiles concernant le bot",
-        "details" : "You can get information about the bot like for example his version, the amount of guild the bot is in, the amount of command than the bot manage, ..."
+        "details" : "Vous pouvez obtenir des informations a propos du bot comme par exemple sa version, le nombres de guilds dans lequel le bot agit, le nombres de commandes disponibles, ...",
+        "detailed": "Voulez-vous obtenir les informations détaillées du bot?"
       }
     },
     "guild-info": {
       "infos": {
         "description": "Afficher quelques informations utiles concernant le serveur",
         "details": "You can get information about the bot like for example his version, the amount of guild the bot is in, the amount of command than the bot manage, ..."
+      },
+      "embed": {
+        "title": "Some informations about {{guild}}",
+        "members": {
+          "name": "",
+          "value": ""
+        }
       }
     },
     "profile-picture": {
@@ -174,12 +216,14 @@
     },
     "ranking": {
       "infos": {
-        "description": "Afficher votre rang actuel sur le serveur."
+        "description": "Afficher votre rang actuel sur le serveur.",
+        "member": "De quel utilisateur souhaitez-vous obtenir le rank?"
       }
     },
     "user-info": {
       "infos": {
-        "description": "Afficher quelques informations utiles concernant un utilisateur"
+        "description": "Afficher quelques informations utiles concernant un utilisateur",
+        "user": "Quel utilisateur souhaitez-vous espionner?"
       }
     }
   },
@@ -252,25 +296,38 @@
   "moderation": {
     "ban": {
       "infos": {
-        "description": "ban a member of the guild"
+        "description": "Bannir un membre du serveur",
+        "details": "The argument must be the mention, the ID, the full or a part of the member username.Only moderator or user able to ban may use this command.",
+        "member": "Quel membre voulez-vous bannir du serveur?",
+        "reason": "Pourquoi voulez-vous bannir cette personne ?"
       },
       "self": "Je ne crois pas que vouloir se ban soit une bonne idée ...",
+      "random": "je ne crois pas que vouloir bannir {{user}} de façon aléatoire soit une bonne idée ...",
       "banned": "[{{date}}] {{username}} a été banni par {{moderator}} pour la raison : {{reason}}\nID de l'utilisateur: {{id}}",
       "unable": "Impossible de bannir {{user}}. `{{err}}`"
     },
     "delete": {
       "infos": {
-        "description": "Supprimer un certain nombre de messages."
-      }
+        "description": "Supprimer un certain nombre de messages.",
+        "details": "Supprimez plus rapidement un certain nombre de messages dans un channel d'un serveur",
+        "amount": "Combien de messages souhaites-vous supprimer ?"
+      },
+      "delete": "{{amount}} messages ont étés supprimés avec succès.",
+      "error-older": "Désolé mais je ne peux pas supprimer des messages vieux de plus de 2 semaines. Essayez avec des messages plus récents !"
     },
     "manage-experience": {
       "infos": {
-        "description": "Gérer l'expérience ou le niveau d'un utilisateur."
+        "description": "Gérer l'expérience ou le niveau d'un utilisateur.",
+        "action": "Quel type d'action souhaitez-vous exécuter? `add`, `remove` or `delete`?",
+        "member": "De quel utilisateur souhaitez-vous modifier l'expérience?",
+        "amount": "How many experience would you give to this user ?"
       }
     },
     "unban": {
       "infos": {
-        "description" : "Débanir un utilisateur et lui permettre de rejoindre a nouveau le serveur."
+        "description" : "Débanir un utilisateur et lui permettre de rejoindre a nouveau le serveur.",
+        "member": "Quel utilisateur souhaitez-vous unban?",
+        "reason": "Pourquoi voulez-vous unban cet utilisateur?"
       },
       "unbanned": "L'utilisateur {{user}} a été débanni de {{guild}} par {{moderator}}. Raison : {{reason}}"
     },
@@ -281,4 +338,3 @@
     }
   }
 }
-
